@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문장온 - AI 문장 분석</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>문장온 <span>文場ON</span></h1>
+    <p>당신의 문장에 감정을 더하다.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>당신의 문장을 분석해 드립니다.</h2>
+      <p>글을 입력하면 감정과 분위기를 분석하고<br>
+      더 풍부한 표현을 추천합니다.</p>
+    </section>
+
+    <section class="editor">
+      <label for="userText">분석할 문장을 입력하세요.</label>
+      <textarea id="userText" placeholder="여기에 직접 쓴 문장을 입력해 보세요."></textarea>
+      <button id="analyzeBtn">문장 분석하기 →</button>
+    </section>
+
+    <section id="result" class="result" hidden>
+      <h2>분석 결과</h2>
+      <div id="emotion"></div>
+      <div id="mood"></div>
+      <div id="suggestion"></div>
+      <div id="metaphor"></div>
+    </section>
+  </main>
+
+  <footer>AI WRITING ASSISTANT · 문장온</footer>
+  <script src="script.js"></script>
+</body>
+</html>
