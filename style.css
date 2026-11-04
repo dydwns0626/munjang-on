@@ -137,6 +137,99 @@ footer {
     font-size: 23px;
   }
 
+/* 문장온 2.0 추가 디자인 */
+
+.analysis-card {
+  background: #f8f7fd;
+  border-radius: 15px;
+  padding: 23px;
+  margin-bottom: 18px;
+}
+
+.analysis-card h3 {
+  font-size: 17px;
+  margin-bottom: 16px;
+  color: #50447e;
+}
+
+.chart {
+  margin-top: 20px;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 75px 1fr 45px;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.bar-row > span:first-child {
+  font-weight: bold;
+}
+
+.bar-row > span:last-child {
+  text-align: right;
+  color: #705bd0;
+  font-weight: bold;
+}
+
+.bar-track {
+  height: 12px;
+  background: #e9e5f5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #9c8ae8, #705bd0);
+  border-radius: 20px;
+  transition: width 0.5s ease;
+}
+
+#beforeAfter p {
+  padding: 14px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+#beforeAfter p:last-child {
+  border-left: 4px solid #8069d9;
+}
+
+#suggestion {
+  color: #7063a0;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.metaphor-item {
+  padding: 13px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.notice {
+  color: #9993aa;
+  font-size: 12px;
+  line-height: 1.7;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .bar-row {
+    grid-template-columns: 60px 1fr 40px;
+    gap: 7px;
+  }
+}
+
   .editor, .result {
     padding: 20px;
   }
