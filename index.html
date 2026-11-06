@@ -65,13 +65,37 @@
         <p>A. 현재 버전은 입력한 글을 별도로 저장하지 않습니다. 필요한 글은 따로 보관해 주세요.</p>
         <p><strong>주의:</strong> 분석 결과와 추천 표현은 참고용으로 활용하고, 자신의 글의 문맥에 맞게 수정하는 것이 좋습니다.</p>
       </details>
-    </section>
+    
+<section class="editor">
 
-      <label for="userText">분석할 문장을 입력하세요.</label>
-      <textarea id="userText"
-        placeholder="여기에 직접 쓴 글을 입력해 보세요."></textarea>
-      <button id="analyzeBtn">문장 분석하기 →</button>
-    </section>
+<label for="userText">분석할 문장을 입력하세요.</label>
+
+<textarea id="userText"
+placeholder="여기에 직접 쓴 글을 입력해 보세요."></textarea>
+
+<div class="example-box">
+  <h3>✏️ 문장 작성 예시</h3>
+  <p>예시를 클릭하면 입력창에 자동으로 들어갑니다.</p>
+
+  <button type="button" class="example-btn"
+    onclick="insertExample(1)">
+    감정 분석 예시
+  </button>
+
+  <button type="button" class="example-btn"
+    onclick="insertExample(2)">
+    반복 단어 분석 예시
+  </button>
+
+  <button type="button" class="example-btn"
+    onclick="insertExample(3)">
+    비유 표현 추천 예시
+  </button>
+</div>
+
+<button id="analyzeBtn">문장 분석하기 →</button>
+
+</section>
 
     <section id="result" class="result" hidden>
       <h2>문장 분석 결과</h2>
