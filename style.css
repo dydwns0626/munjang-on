@@ -310,3 +310,30 @@ footer {
   color: #6654c8;
   cursor: pointer;
 }
+
+.example-item {
+  background: white;
+  border: 1px solid #e3def5;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.example-item:hover {
+  background: #eeeaff;
+  border-color: #8b78dc;
+}
+
+.example-item strong {
+  color: #6654c8;
+  font-size: 14px;
+}
+
+.example-item p {
+  color: #625d70;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 8px;
+}
