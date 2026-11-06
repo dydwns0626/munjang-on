@@ -234,3 +234,51 @@ footer {
     padding: 20px;
   }
 }
+
+/* 사용 설명서 디자인 */
+.user-guide {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 30px rgba(54, 42, 100, 0.06);
+}
+
+.user-guide h2 {
+  color: #6654c8;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.user-guide > p {
+  color: #898499;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.user-guide details {
+  border: 1px solid #eceaf3;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+  background: #faf9fe;
+}
+
+.user-guide summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #50447e;
+}
+
+.user-guide details p {
+  margin-top: 12px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #625d70;
+}
+
+@media (max-width: 600px) {
+  .user-guide {
+    padding: 20px;
+  }
+}
