@@ -73,31 +73,27 @@
 <textarea id="userText"
 placeholder="여기에 직접 쓴 글을 입력해 보세요."></textarea>
 
+
 <div class="example-box">
   <h3>✏️ 문장 작성 예시</h3>
-  <p>예시를 클릭하면 입력창에 자동으로 들어갑니다.</p>
+  <p>아래 예시를 참고해 문장을 작성해 보세요. 예시 문장을 클릭하면 입력창에 자동으로 들어갑니다.</p>
 
-  <button type="button" class="example-btn"
-    onclick="insertExample(1)">
-    감정 분석 예시
-  </button>
+  <div class="example-item" onclick="insertExample(1)">
+    <strong>① 감정 분석 예시</strong>
+    <p>오늘은 유난히 마음이 무거웠다. 아무렇지 않은 척 웃었지만, 마음 한구석에는 아쉬움이 남아 있었다.</p>
+  </div>
 
-  <button type="button" class="example-btn"
-    onclick="insertExample(2)">
-    반복 단어 분석 예시
-  </button>
+  <div class="example-item" onclick="insertExample(2)">
+    <strong>② 반복 단어 분석 예시</strong>
+    <p>나는 너를 기다렸다. 매일 너를 기다렸고, 오늘도 너를 기다리고 있다.</p>
+  </div>
 
-  <button type="button" class="example-btn"
-    onclick="insertExample(3)">
-    비유 표현 추천 예시
-  </button>
+  <div class="example-item" onclick="insertExample(3)">
+    <strong>③ 비유 표현 추천 예시</strong>
+    <p>그리움이 마음속에 남아 쉽게 사라지지 않았다. 밤이 깊어질수록 그리움은 더욱 커졌다.</p>
+  </div>
 </div>
 
-<button id="analyzeBtn">문장 분석하기 →</button>
-
-</section>
-
-      
     <section id="result" class="result" hidden>
       <h2>문장 분석 결과</h2>
 
