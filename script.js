@@ -275,3 +275,19 @@ analyzeBtn.addEventListener("click", () => {
   result.scrollIntoView({ behavior: "smooth" });
 });
 
+
+function insertExample(number) {
+  const examples = {
+    1: "오늘은 유난히 마음이 무거웠다. 아무렇지 않은 척 웃었지만, 마음 한구석에는 아쉬움이 남아 있었다.",
+    2: "나는 너를 기다렸다. 매일 너를 기다렸고, 오늘도 너를 기다리고 있다.",
+    3: "그리움이 마음속에 남아 쉽게 사라지지 않았다. 밤이 깊어질수록 그리움은 더욱 커졌다."
+  };
+
+  const input = document.querySelector("textarea");
+
+  if (input) {
+    input.value = examples[number];
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    input.focus();
+  }
+}
