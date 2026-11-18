@@ -337,3 +337,11 @@ footer {
   line-height: 1.7;
   margin-top: 8px;
 }
+/* 분석 결과 창 표시 오류 수정 */
+#result[hidden] {
+  display: none !important;
+}
+
+#result:not([hidden]) {
+  display: block !important;
+}
